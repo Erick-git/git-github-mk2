@@ -3,6 +3,12 @@ Hola windows y linux.
 Terminal:
 -acceder a particiones 
 	df -h  /despliega particiones 	#/dev/nvme0n1p5 #media/erick/Datos 
-	cd /media/erick/Datos
+	cd /media/erick/Datos/Desarrollo/Vscode
 	ls -l
+	pwd
+	git init
+
+Ingreso a git
+	git init		//Inicializa el repo de .git
+	git status		//Da el estatus del repo local
 	
