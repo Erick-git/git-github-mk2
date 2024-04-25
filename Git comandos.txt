@@ -11,5 +11,10 @@ Terminal:
 Ingreso a git
 	git init							//Inicializa el repo de .git
 	git status							//Da el estatus del repo local
-	git branch "elegir nombre de 
-	git checkout "Rama a elegir"		//Sirve para cambiar de rama 
+	git branch					 		//Para ver en que ramma nos encontramos
+	git branch	" + nombre de la rama"	//Sirve para crear ramas.					 
+	git checkout "Rama a elegir"		//Sirve para cambiar de rama
+	git show							//Para ver el actual commint con el ultimo
+	git log								//Para ver historial de commits
+	git diff "Sha" "Sha"				//Ver diferencias entre commits usando shas
+	 
