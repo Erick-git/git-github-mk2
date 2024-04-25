@@ -9,6 +9,7 @@ Terminal:
 	git init
 
 Ingreso a git
-	git init		//Inicializa el repo de .git
-	git status		//Da el estatus del repo local
-	
+	git init							//Inicializa el repo de .git
+	git status							//Da el estatus del repo local
+	git branch "elegir nombre de 
+	git checkout "Rama a elegir"		//Sirve para cambiar de rama 
