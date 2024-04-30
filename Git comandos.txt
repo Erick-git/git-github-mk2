@@ -10,6 +10,10 @@ Terminal:
 
 Ingreso a git
 	git init							//Inicializa el repo de .git
+	git add "agregar el archivo"		//Agregar el archivo a Sataging
+	git add ..							//Agregar todos los archivos de esa carpeta a Staging
+	git commit -m "Agregar comentarios"	//Hace commit y guarda los cmabios con un comentario.
+	git commit -am "Agregar comentario"	//Agrega y hace commit con el comentario.
 	git status							//Da el estatus del repo local
 	git branch					 		//Para ver en que ramma nos encontramos
 	git branch	" + nombre de la rama"	//Sirve para crear ramas.					 
@@ -17,4 +21,8 @@ Ingreso a git
 	git show							//Para ver el actual commint con el ultimo
 	git log								//Para ver historial de commits
 	git diff "Sha" "Sha"				//Ver diferencias entre commits usando shas
-	 
+										//El antepenultimo y el ultimo.
+	git log								//Para ver los commits  
+	
+	git reset  "sha" --hard				//elimo todo hasta el ultimo commit realizado
+	git soft "sha" --soft				//Resetea excepto el Staging en el ultimo
