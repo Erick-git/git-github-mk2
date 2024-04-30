@@ -1,12 +1,16 @@
 Hola windows y linux.
 
 Terminal:
--acceder a particiones 
-	df -h  /despliega particiones 	#/dev/nvme0n1p5 #media/erick/Datos 
-	cd /media/erick/Datos/Desarrollo/Vscode
-	ls -l
-	pwd
-	git init
+-acceder a particiones
+
+cd /media/erick/Datos/Desarrollo/Vscode
+	df -h  								//despliega particiones 	
+										// /dev/nvme0n1p5 #media/erick/Datos 
+	ls -l								//Para listar archivos de la carpeta
+	ls -la								//Para ver archivos ocultos de la carpeta
+	pwd									//Ubicarse en la terminal
+	!343								//Repetir comandos
+	cat Hola.txt						//Ver dentro del archivo.
 
 Ingreso a git
 	git init							//Inicializa el repo de .git
@@ -22,7 +26,11 @@ Ingreso a git
 	git log								//Para ver historial de commits
 	git diff "Sha" "Sha"				//Ver diferencias entre commits usando shas
 										//El antepenultimo y el ultimo.
-	git log								//Para ver los commits  
+	git log								//Para ver los commits
+	git --stat						//Permite ver los cambios que se hicieron  
 	
 	git reset  "sha" --hard				//elimo todo hasta el ultimo commit realizado
 	git soft "sha" --soft				//Resetea excepto el Staging en el ultimo
+	rm Prueba.txt						//Para eliminar archivo y carpeta.
+
+
