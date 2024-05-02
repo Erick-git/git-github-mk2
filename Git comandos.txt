@@ -33,4 +33,6 @@ Ingreso a git
 	git soft "sha" --soft				//Resetea excepto el Staging en el ultimo
 	rm Prueba.txt						//Para eliminar archivo y carpeta.
 
+	Amaro y charlie
+
 
