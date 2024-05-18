@@ -35,6 +35,9 @@ Ingreso a git
 
 Git-Hub
 
+	git remote add origin "https://github.com/Erick666666..." //Agrega un repositorio remoto
+	git remote							//Confirma repositorio en github
+	
 
 	
 
