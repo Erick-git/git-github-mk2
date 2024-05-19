@@ -27,7 +27,7 @@ Ingreso a git
 	git diff "Sha" "Sha"				//Ver diferencias entre commits usando shas
 										//El antepenultimo y el ultimo.
 	git log								//Para ver los commits
-	git --stat						//Permite ver los cambios que se hicieron  
+	git --stat							//Permite ver los cambios que se hicieron  
 	
 	git reset  "sha" --hard				//elimo todo hasta el ultimo commit realizado
 	git soft "sha" --soft				//Resetea excepto el Staging en el ultimo
@@ -37,6 +37,21 @@ Git-Hub
 
 	git remote add origin "https://github.com/Erick666666..." //Agrega un repositorio remoto
 	git remote							//Confirma repositorio en github
+	git remote -v						//Para consultar la configuracion actual y lista los
+										//los repositorios remotos con sus respectivas urls
+	git push origin master				//para subir los datos del repo local al github
+										//#Nota: si aparece usuario y contraseña de git en la
+										contraseña se usa un token para sutituirla el usuario es el mismo#
+	git pull origin master				//Hace lo del marge y fetch al mismo tiempo
+	
+	primera vez
+	git push -u origin master			//Este comando envía los cambios del repositorio local al repositorio
+										remoto en GitHub. El -u establece la rama master en el repositorio 
+										remoto como la rama predeterminada para el push y pull en el futuro.									
+	
+
+	
+
 	
 
 	
