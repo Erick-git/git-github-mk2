@@ -12,6 +12,9 @@ cd /media/erick/Datos/Desarrollo/Vscode
 	!343								//Repetir comandos
 	cat Hola.txt						//Ver dentro del archivo.
 
+#Para borrar carpeta .git
+	rm -rf .git							//borra carpeta .git y quita el repo local
+
 Ingreso a git
 	git init							//Inicializa el repo de .git
 	git add "agregar el archivo"		//Agregar el archivo a Sataging
