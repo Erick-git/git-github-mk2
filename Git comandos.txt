@@ -48,6 +48,7 @@ Git-Hub
 	git push -u origin master			//Este comando envía los cambios del repositorio local al repositorio
 										remoto en GitHub. El -u establece la rama master en el repositorio 
 										remoto como la rama predeterminada para el push y pull en el futuro.									
+	gti pull origin master				//Descarga los cambios del repo remoto "git fetch"y los integra en la rama actual "git marge".
 	
 
 	
