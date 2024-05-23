@@ -58,6 +58,7 @@ Git-Hub
 	git remote -v						//Ver las url's
 	git remote add orogin https://...	//Agrega otro repositorio remoto
 	git push -u origin main				//Sube el repo clocal al repo remoto
+	git remote set-url origin 
 
 	
 
