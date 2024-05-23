@@ -46,7 +46,7 @@ Git-Hub
 										//#Nota: si aparece usuario y contraseña de git en la
 										contraseña se usa un token para sutituirla el usuario es el mismo#
 	git pull origin master				//Hace lo del marge y fetch al mismo tiempo
-	
+	git pull origin master --allow-unrelated-histories //Para forzar si existe error en historias no relacionadas
 	primera vez
 	git push -u origin master			//Este comando envía los cambios del repositorio local al repositorio
 										remoto en GitHub. El -u establece la rama master en el repositorio 
@@ -58,7 +58,9 @@ Git-Hub
 	git remote -v						//Ver las url's
 	git remote add orogin https://...	//Agrega otro repositorio remoto
 	git push -u origin main				//Sube el repo clocal al repo remoto
-	git remote set-url origin 
+	git remote set-url origin			//cambiar la URL asociada con un repositorio remoto en Git, actualizar
+										//la URL del remoto sin tener que eliminar y volver a agregar el remoto.
+	
 
 	
 
