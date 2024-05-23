@@ -61,8 +61,15 @@ Git-Hub
 	git remote set-url origin			//cambiar la URL asociada con un repositorio remoto en Git, actualizar
 										//la URL del remoto sin tener que eliminar y volver a agregar el remoto.
 	
+ssh - linux
 
-	
+	ls -al ~/.ssh						//verificar si ya tienes una ssh
+	ssh-keygen -t rsa -b 4096 -C "erick666666@gmail.com" // generador de una nueva clave SSH
+	eval "$(ssh-agent -s)"				//gestionar tus claves SSH	
+	ssh-add ~/.ssh/id_rsa				//nueva clave SSH al agente
+	cat ~/.ssh/id_rsa.pub				//abrir la llave pub
+	git remote set-url origin git@github.com:Erick-git/git-github-mk2.git
+
 
 	
 
