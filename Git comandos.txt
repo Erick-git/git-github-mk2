@@ -68,7 +68,12 @@ ssh - linux
 	eval "$(ssh-agent -s)"				//gestionar tus claves SSH	
 	ssh-add ~/.ssh/id_rsa				//nueva clave SSH al agente
 	cat ~/.ssh/id_rsa.pub				//abrir la llave pub
-	git remote set-url origin git@github.com:Erick-git/git-github-mk2.git
+	ssh -T git@github.com				//da una confirmación de que jaló
+	
+	# Se pueva haciendo cambios 
+	git remote -v
+	git remote set-url origin git@github.com:Erick-git/git-github-mk2.git //Se ingresa la url con ssh
+	
 
 
 	
