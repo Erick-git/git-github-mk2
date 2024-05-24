@@ -1,4 +1,4 @@
-Hola windows y linux.
+Windows y Linux
 
 Terminal:
 -acceder a particiones
@@ -15,7 +15,7 @@ cd /media/erick/Datos/Desarrollo/Vscode
 #Para borrar carpeta .git
 	rm -rf .git							//borra carpeta .git y quita el repo local
 
-Ingreso a git
+#Ingreso a git
 	git init							//Inicializa el repo de .git
 	git add "agregar el archivo"		//Agregar el archivo a Sataging
 	git add ..							//Agregar todos los archivos de esa carpeta a Staging
@@ -35,6 +35,22 @@ Ingreso a git
 	git reset  "sha" --hard				//elimo todo hasta el ultimo commit realizado
 	git soft "sha" --soft				//Resetea excepto el Staging en el ultimo
 	rm Prueba.txt						//Para eliminar archivo y carpeta.
+	git log --all --graph				//Para ver los commits graficamente en la terminal
+	git log --all --graph --decorate	//Para ver los commits más bonitos
+	git log --all --graph --decorate --oneline //Para ver los commits mas bonitos en una linea
+	
+	#Alias
+	alias arbol="git log --all --graph --decorate" //Sirve para guardar una linea en un alias
+	unalias arbol						//Sirve para elimiar el alias
+
+	#Tags
+	git tag -a v1.0 -m "Primera version del git y github" a294ca9 //Se agrega un versionamiento con el uso de un commit
+	git tag								//Para mostrar los tags
+	git show-ref --tags					//para ver las referencias del commit relacionada con el tag
+	git push origin --tags				//para subit los cambios de tags al Hub
+	git tag -d v1.0						//Para borrar el tag en el local
+	git push origin :refs/tags/v1.1		//Para borrar el tag en el github
+
 
 Git-Hub
 
