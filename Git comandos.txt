@@ -38,6 +38,9 @@ cd /media/erick/Datos/Desarrollo/Vscode
 	git log --all --graph				//Para ver los commits graficamente en la terminal
 	git log --all --graph --decorate	//Para ver los commits más bonitos
 	git log --all --graph --decorate --oneline //Para ver los commits mas bonitos en una linea
+	git show-branch						// Muestra todos los cambios que han tenido las ramas
+	git show-branch --all				//lo mismo con un poco mas de datos
+	gitk								//se visualizan los cambios y ramas con una interfaz gráfica
 	
 	#Alias
 	alias arbol="git log --all --graph --decorate" //Sirve para guardar una linea en un alias
@@ -50,6 +53,13 @@ cd /media/erick/Datos/Desarrollo/Vscode
 	git push origin --tags				//para subit los cambios de tags al Hub
 	git tag -d v1.0						//Para borrar el tag en el local
 	git push origin :refs/tags/v1.1		//Para borrar el tag en el github
+	
+# Ingresando ramas
+
+git pull origin main
+git push origin main
+git checkout rama						//cmabiando de rama
+git push origin main					//hacer un push al origin de la ramma que se tenga
 
 
 Git-Hub
