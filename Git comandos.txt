@@ -56,10 +56,10 @@ cd /media/erick/Datos/Desarrollo/Vscode
 	
 # Ingresando ramas
 
-git pull origin main
-git push origin main
-git checkout rama						//cmabiando de rama
-git push origin main					//hacer un push al origin de la ramma que se tenga
+	git pull origin main
+	git push origin main
+	git checkout rama						//cmabiando de rama
+	git push origin main					//hacer un push al origin de la ramma que se tenga
 
 
 Git-Hub
@@ -96,7 +96,7 @@ ssh - linux
 	cat ~/.ssh/id_rsa.pub				//abrir la llave pub
 	ssh -T git@github.com				//da una confirmación de que jaló
 	
-	# Se pueva haciendo cambios 
+# Se pueva haciendo cambios 
 	git remote -v
 	git remote set-url origin git@github.com:Erick-git/git-github-mk2.git //Se ingresa la url con ssh
 	
