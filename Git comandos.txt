@@ -1,7 +1,7 @@
 Windows y Linux
 
 Terminal:
--acceder a particiones
+-Acceder a particiones
 
 cd /media/erick/Datos/Desarrollo/Vscode
 	df -h  								//despliega particiones 	
@@ -15,7 +15,9 @@ cd /media/erick/Datos/Desarrollo/Vscode
 #Para borrar carpeta .git
 	rm -rf .git							//borra carpeta .git y quita el repo local
 
-#Ingreso a git
+Git
+
+# Ingreso a git
 	git init							//Inicializa el repo de .git
 	git add "agregar el archivo"		//Agregar el archivo a Sataging
 	git add ..							//Agregar todos los archivos de esa carpeta a Staging
@@ -23,7 +25,8 @@ cd /media/erick/Datos/Desarrollo/Vscode
 	git commit -am "Agregar comentario"	//Agrega y hace commit con el comentario.
 	git status							//Da el estatus del repo local
 	git branch					 		//Para ver en que ramma nos encontramos
-	git branch	" + nombre de la rama"	//Sirve para crear ramas.					 
+	git branch	" + nombre de la rama"	//Sirve para crear ramas.
+	git branch -D "rama"				//Borrar rama 					 
 	git checkout "Rama a elegir"		//Sirve para cambiar de rama
 	git show							//Para ver el actual commint con el ultimo
 	git log								//Para ver historial de commits
@@ -42,7 +45,7 @@ cd /media/erick/Datos/Desarrollo/Vscode
 	git show-branch --all				//lo mismo con un poco mas de datos
 	gitk								//se visualizan los cambios y ramas con una interfaz gráfica
 	
-	#Alias
+# Alias
 	alias arbol="git log --all --graph --decorate" //Sirve para guardar una linea en un alias
 	unalias arbol						//Sirve para elimiar el alias
 
@@ -96,7 +99,7 @@ ssh - linux
 	cat ~/.ssh/id_rsa.pub				//abrir la llave pub
 	ssh -T git@github.com				//da una confirmación de que jaló
 	
-# Se pueva haciendo cambios 
+# Se prueva haciendo cambios 
 	git remote -v
 	git remote set-url origin git@github.com:Erick-git/git-github-mk2.git //Se ingresa la url con ssh
 	
