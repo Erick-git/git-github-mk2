@@ -1,0 +1,112 @@
+Windows y Linux
+
+Terminal:
+-Acceder a particiones
+
+cd /media/erick/Datos/Desarrollo/Vscode
+	df -h  								//despliega particiones 	
+										// /dev/nvme0n1p5 #media/erick/Datos 
+	ls -l								//Para listar archivos de la carpeta
+	ls -la								//Para ver archivos ocultos de la carpeta
+	pwd									//Ubicarse en la terminal
+	!343								//Repetir comandos
+	cat Hola.txt						//Ver dentro del archivo.
+
+#Para borrar carpeta .git
+	rm -rf .git							//borra carpeta .git y quita el repo local
+
+Git
+
+# Ingreso a git
+	git init							//Inicializa el repo de .git
+	git add "agregar el archivo"		//Agregar el archivo a Sataging
+	git add ..							//Agregar todos los archivos de esa carpeta a Staging
+	git commit -m "Agregar comentarios"	//Hace commit y guarda los cmabios con un comentario.
+	git commit -am "Agregar comentario"	//Agrega y hace commit con el comentario.
+	git status							//Da el estatus del repo local
+	git branch					 		//Para ver en que ramma nos encontramos
+	git branch	" + nombre de la rama"	//Sirve para crear ramas.
+	git branch -D "rama"				//Borrar rama 					 
+	git checkout "Rama a elegir"		//Sirve para cambiar de rama
+	git show							//Para ver el actual commint con el ultimo
+	git log								//Para ver historial de commits
+	git diff "Sha" "Sha"				//Ver diferencias entre commits usando shas
+										//El antepenultimo y el ultimo.
+	git log								//Para ver los commits
+	git --stat							//Permite ver los cambios que se hicieron  
+	
+	git reset  "sha" --hard				//elimo todo hasta el ultimo commit realizado
+	git soft "sha" --soft				//Resetea excepto el Staging en el ultimo
+	rm Prueba.txt						//Para eliminar archivo y carpeta.
+	git log --all --graph				//Para ver los commits graficamente en la terminal
+	git log --all --graph --decorate	//Para ver los commits más bonitos
+	git log --all --graph --decorate --oneline //Para ver los commits mas bonitos en una linea
+	git show-branch						// Muestra todos los cambios que han tenido las ramas
+	git show-branch --all				//lo mismo con un poco mas de datos
+	gitk								//se visualizan los cambios y ramas con una interfaz gráfica
+	
+# Alias
+	alias arbol="git log --all --graph --decorate" //Sirve para guardar una linea en un alias
+	unalias arbol						//Sirve para elimiar el alias
+
+	#Tags
+	git tag -a v1.0 -m "Primera version del git y github" a294ca9 //Se agrega un versionamiento con el uso de un commit
+	git tag								//Para mostrar los tags
+	git show-ref --tags					//para ver las referencias del commit relacionada con el tag
+	git push origin --tags				//para subit los cambios de tags al Hub
+	git tag -d v1.0						//Para borrar el tag en el local
+	git push origin :refs/tags/v1.1		//Para borrar el tag en el github
+	
+# Ingresando ramas
+
+	git pull origin main
+	git push origin main
+	git checkout rama						//cmabiando de rama
+	git push origin main					//hacer un push al origin de la ramma que se tenga
+
+
+Git-Hub
+
+	git remote add origin "https://github.com/Erick666666..." //Agrega un repositorio remoto
+	git remote							//Confirma repositorio en github
+	git remote -v						//Para consultar la configuracion actual y lista los
+										//los repositorios remotos con sus respectivas urls
+	git push origin master				//para subir los datos del repo local al github
+										//#Nota: si aparece usuario y contraseña de git en la
+										contraseña se usa un token para sutituirla el usuario es el mismo#
+	git pull origin master				//Hace lo del marge y fetch al mismo tiempo
+	git pull origin master --allow-unrelated-histories //Para forzar si existe error en historias no relacionadas
+	primera vez
+	git push -u origin master			//Este comando envía los cambios del repositorio local al repositorio
+										remoto en GitHub. El -u establece la rama master en el repositorio 
+										remoto como la rama predeterminada para el push y pull en el futuro.									
+	git pull origin master				//Descarga los cambios del repo remoto "git fetch"y los integra en la rama actual "git marge".
+
+#Para remover el repositorio remoto
+	git remote remove origin			//Para remover el repo remoto de la configuración del repo local
+	git remote -v						//Ver las url's
+	git remote add orogin https://...	//Agrega otro repositorio remoto
+	git push -u origin main				//Sube el repo clocal al repo remoto
+	git remote set-url origin			//cambiar la URL asociada con un repositorio remoto en Git, actualizar
+										//la URL del remoto sin tener que eliminar y volver a agregar el remoto.
+	
+ssh - linux
+
+	ls -al ~/.ssh						//verificar si ya tienes una ssh
+	ssh-keygen -t rsa -b 4096 -C "erick666666@gmail.com" // generador de una nueva clave SSH
+	eval "$(ssh-agent -s)"				//gestionar tus claves SSH	
+	ssh-add ~/.ssh/id_rsa				//nueva clave SSH al agente
+	cat ~/.ssh/id_rsa.pub				//abrir la llave pub
+	ssh -T git@github.com				//da una confirmación de que jaló
+	
+# Se prueva haciendo cambios 
+	git remote -v
+	git remote set-url origin git@github.com:Erick-git/git-github-mk2.git //Se ingresa la url con ssh
+	
+
+
+	
+
+	
+
+
